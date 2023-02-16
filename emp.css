@@ -1,0 +1,148 @@
+*{
+    /* height: 24px; */
+    /* width: 152px; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: #f3f3f4;
+}
+.main{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.form-section{
+    
+    height: 150px;
+    background-color: lightyellow;
+    
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+#emp-gender{
+    padding-right: 20px;
+}
+.form-container{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-input{
+    height: 50px;
+    width: 200px;
+    border-radius: 7px;
+    border: none;
+    padding: 7px 20px;
+    background-color: #f1f1f1;
+}
+.error-msg{
+    font-weight: bold;
+    color: red;
+}
+.input-group p{
+    visibility: hidden;
+}
+.error-txt{
+    position: absolute;
+    bottom: -30px;
+    color: red;
+}
+.error{
+    position: relative;
+}
+.error p{
+    visibility: visible;
+}
+.error input{
+    border: 2px solid red;
+}
+
+
+.label{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-btn{
+    width: 120px;
+    height: 54px;
+    background-color: salmon;
+    color: black;
+    margin-left: 20px;
+}
+
+.delete-btn{
+    
+    color: red;
+    background-color: transparent;
+    
+}
+.btn{
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: ease-in-out 0.15s;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.table-section{
+    width: 80%;
+    height: 300px;
+    text-align: center;
+}
+.table-section h2{
+    margin-bottom: 20px;
+}
+table{
+    background-color: #ffffff;
+    
+  }
+tr{
+    height: 50px; 
+}
+.table{
+   
+    width: 100%;
+    text-align: center;
+    
+}
+.edit{
+    width: 53px;
+    height: 30px;
+    color: black;
+    background: aqua;
+    border: 0px;
+    border-radius: 5px;
+}
+/* now making text visible for updation 
+p {
+    opacity:1;
+    transition:opacity 500ms;
+}
+p.waa {
+    opacity:0;
+}
+*/
+/*  
+.check{
+    display: none;
+}
+*/

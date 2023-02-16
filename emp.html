@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="emp.css">
+    <title>MyEmployeePortal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <form class="form-section" id="empForm" autocomplete="off">
+                <h1>Employee Portal</h1>
+                <div class="form-container">
+
+                    <div class="id-input input-group" id="input-area">
+                        <input type="number" class="form-input" placeholder="ID" id="emp-id">
+                        <p class="error-txt"></p>
+                    </div> &nbsp; &nbsp; &nbsp;&nbsp;
+                    <div class="name-input input-group" id="input-area">
+                        <input type="text" class="form-input" placeholder="Name" id="emp-name">
+                        <p class="error-txt"></p>
+                    </div> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="age-input input-group" id="input-area">
+                        <input type="number" class="form-input" placeholder="Age" id="emp-age">
+                        <p class="error-txt"></p>
+                    </div> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="Gender-input input-group" id="input-area">
+                        <div class="label" style="position:relative; left:0px; top:11px">
+                            <select name="gender" class="form-input" id="emp-gender">
+                                <option value="" selected disabled>Select Gender</option>
+                                <option value="male" class="gender-select">Male</option>
+                                <option value="female" class="gender-select">Female</option>
+                                <option value="female" class="gender-select">Others</option>
+                            </select>
+                            <p class="error-txt"></p>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="submit-btn" id="submit">
+                        <button type="submit" class="btn add-btn">ADD</button>
+                    </div>
+
+                    <div class="submit-btn update" id="update">
+                        <button  class="btn add-btn" onclick="Update()">UPDATE</button>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="error-section">
+                <span class="error-msg">
+                    <p id="error-area"></p>
+                </span>
+            </div>
+            <div class="table-section">
+                <fieldset>
+                    <legend>
+                        <h2>Employee Details</h2>
+                    </legend>
+                    <table class="table" id="emp-table">
+
+                    </table>
+                </fieldset>
+            </div>
+
+        </div>
+        <div>
+          count: <span id="fortotalCount"></span>
+        </div>
+    </div>
+    <script src="emp.js"></script>
+</body>
+
+</html>
